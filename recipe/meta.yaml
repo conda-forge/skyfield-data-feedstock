@@ -1,18 +1,18 @@
 {% set name = "skyfield-data" %}
-{% set version = "0.1.0" %}
+{% set version = "1.0.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bae8e2d29936cae1c919ae4190aa523659043c43789631bd81de8c3b9b3815f7
+  sha256: 14565d5831ead09acf04fe68c0262178940a1e000fe84c05dcf347e0e6bdde74
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -20,11 +20,11 @@ requirements:
     - python
   run:
     - python
-    
+
 test:
   imports:
     - skyfield_data
-    
+
 about:
   home: https://github.com/brunobord/skyfield-data
   license: MIT
