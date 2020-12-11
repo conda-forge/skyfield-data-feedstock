@@ -5,11 +5,9 @@ Home: https://github.com/brunobord/skyfield-data
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skyfield-data-feedstock/blob/master/LICENSE.txt)
 
 Summary: Data files for Skyfield
-
-
 
 Current build status
 ====================
