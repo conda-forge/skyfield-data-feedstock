@@ -1,5 +1,5 @@
 {% set name = "skyfield-data" %}
-{% set version = "4.0.0" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 128d407e43a04be66c44b03914f9147b5e65b96078db776e6a4f5538ab0b74bf
+  sha256: fe3484028cf96eb8040104d0626ec712f73e22e0f97a1eee62527207eead66c8
 
 build:
   noarch: python
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
@@ -35,3 +35,4 @@ about:
 extra:
   recipe-maintainers:
     - Matt-BF
+    - ReimarBauer
