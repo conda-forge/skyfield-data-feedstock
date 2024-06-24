@@ -1,5 +1,5 @@
 {% set name = "skyfield-data" %}
-{% set version = "5.0.0" %}
+{% set version = "6.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fe3484028cf96eb8040104d0626ec712f73e22e0f97a1eee62527207eead66c8
+  sha256: 4e4f059c91f712b2d81d87288df04511a8154adb0044ebfc11365a689a53bcac
 
 build:
   noarch: python
